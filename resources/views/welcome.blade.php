@@ -39,6 +39,10 @@
                         {{ config('app.name') }}
                     </h1>
 
+                    <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
+                        @livewire('application-form')
+                    </div>
+
                     <ul class="list-reset">
                         <li class="inline px-4">
                             <a href="https://tailwindcss.com" class="font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:underline transition ease-in-out duration-150">Tailwind CSS</a>
