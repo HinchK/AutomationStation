@@ -18,11 +18,11 @@ class CreateApplicationsTable extends Migration
             $table->string('name');
             $table->string('github')->unique();
             $table->timestamp('lastpull')->nullable();
-            $table->string('backup_filename');
-            $table->longText('docker');
-            $table->longText('notes');
-            $table->string('path');
-            $table->longText('autodocs');
+            $table->string('backup_filename')->nullable();
+            $table->longText('docker')->nullable();
+            $table->longText('notes')->nullable();
+            $table->string('path')->nullable();
+            $table->longText('autodocs')->nullable();
             $table->timestamp('install_date')->useCurrent();
             $table->timestamps();
         });
